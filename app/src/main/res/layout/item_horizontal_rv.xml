@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:clickable="false"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_hor_rv"
+        android:layout_width="60dp"
+        android:layout_marginStart="3dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:shapeAppearanceOverlay="@style/imageShape" />
+
+    <TextView
+        android:id="@+id/app_name_hor_rv"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="15sp"
+        tools:text="Notion" />
+
+    <TextView
+        android:id="@+id/rating_hor_rv"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="3dp"
+        android:drawableEnd="@drawable/star"
+        android:gravity="center"
+        android:textSize="15sp"
+        tools:text="4.5" />
+
+</LinearLayout>
